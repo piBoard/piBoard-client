@@ -1,0 +1,18 @@
+{
+  "name": "piboard",
+  "main": "index.html",
+  "chromium-args": " --disable-gpu",
+  "window": {
+    "title": "piBoard",
+    "toolbar": false,
+    "frame": true,
+    "width": 1200,
+    "height": 560,
+    "position": "mouse",
+    "resizable": true
+  },
+  "dependencies": {
+    "exec": "^0.1.2",
+    "socket.io-client": "^1.1.0"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>piBoard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="app://app/asset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="app://app/asset/css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">piBoard</a>
+        </div>
+        <form class="board-info navbar-form navbar-right hidden">
+          <button type="button" class="btn btn-danger disconnect"><span class="glyphicon glyphicon-remove"></span> Disconnect</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar main-menu">
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Connect</h1>
+          <div class="page-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="passModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Please provide the piBoard password</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="secureConnect btn btn-primary">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="app://app/asset/jquery/jquery.min.js"></script>
+    <script src="app://app/asset/jquery/jquery.hotkeys.js"></script>
+    <script src="app://app/asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="app://app/asset/script/holder.js"></script>
+    <script src="app://app/asset/script/script.js"></script>
+  </body>
+</html>
