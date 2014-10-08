@@ -137,7 +137,8 @@ var piBoard = {
     return externalIps;
   },
   getBroadCastAddress: function(interface, callback){
-    exec("ifconfig wlan0 | grep 'Bcast:'", {}, function(err, out, code){
+
+    exec("ifconfig " + interface +" | grep 'Bcast:'", {}, function(err, out, code){
         var regex = /Bcast:(\d+\.\d+\.\d+\.\d+)/g;
         var address = regex.exec(out);
         if(address[1]){
